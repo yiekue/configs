@@ -1,0 +1,47 @@
+#vim files
+*.swp
+[._]*.sw[a-p]
+[._]sw[a-p]
+.ycm_extra_conf.py
+.color_coded
+
+#tags
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+
+#for cpp
+CMakeLists.txt.user
+/core
+*.gch
+*.pch
+*.so
+*.dylib
+*.lib
+*.a
+*.out
+*.o
+*.so.*
+
+#for python
+*.pyc
+*.py[cod]
+*$py.class
+
+#for java
+*.class
+*.log
+*.ctxt
+
+#for linux
+.directory
+.Trash-*
+.nfs*
+*~
+
+#for OS X
+.DS_Store

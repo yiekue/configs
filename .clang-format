@@ -1,0 +1,73 @@
+Language: Cpp
+
+#在llvm的配置基础上加定制配置
+BasedOnStyle:  llvm
+
+#If true, analyze the formatted file for the most common alignment of & and *. PointerAlignment is then used only as fallback.
+DerivePointerAlignment: false
+
+IndentWidth: 4
+
+#尖括号与内容之间留一个空格
+SpacesInAngles: true
+
+#@[]里面两边空格，原true
+SpacesInContainerLiterals: true
+
+#Add a space after @property in Objective-C, i.e. use \@property (readonly) instead of \@property(readonly).
+ObjCSpaceAfterProperty: true
+
+#The number of characters to use for indentation of ObjC blocks.
+ObjCBlockIndentWidth: 4
+
+#If true, if (a) return; can be put on a single line.
+AllowShortIfStatementsOnASingleLine: true
+
+#所有位置的指针星号（＊）或取地址符号（&）对齐位置：Left、Middle、Right，当作为乘号时候居中 （规范为Right）
+PointerAlignment: Right
+
+#The maximum number of consecutive empty lines to keep.
+MaxEmptyLinesToKeep: 2
+
+#每行字符的长度
+ColumnLimit: 0
+
+#注释对齐
+AlignTrailingComments: true
+
+#括号后加空格
+SpaceAfterCStyleCast: true
+
+#配置花括号的换行标准：Attach：任何时候都不换行；Allman：任何时候始终换行；Stroustrup: 只在function和else处换行；
+#Linux:只在function、namespace、class的时候换行；GNU：始终换行，并在控制块添加一个额外的缩进，但在class、function、definitions的时候不换行；（规范）
+BreakBeforeBraces: Linux
+
+#true:在赋值运算符之前添加一个空格，否则去掉；(规范为添加)
+SpaceBeforeAssignmentOperators: true
+
+#在紧跟注释之前所留空格数，一般建议为2个空格
+SpacesBeforeTrailingComments: 2
+
+#true: 在超过规定列数之后，在方法声明中将所有参数换行显示（包括在方法声明和实现中，不包括C函数方法）；
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# true：允许较短(一般只有一行，多为内联C函数)的Function在一行显示,如“int f() { return 1;  }”，规定设为false；
+AllowShortFunctionsOnASingleLine: false
+
+#true: 允许较短的if判断在一行显示，否则换行显示（没有自动加花括号）；
+AllowShortIfStatementsOnASingleLine: true
+
+#??? true 允许较短的循环（while、for）在一行显示，否则换行显示（没有自动加花括号）；
+AllowShortLoopsOnASingleLine: true
+
+# switch的case缩进
+IndentCaseLabels: true 
+
+AlignAfterOpenBracket: Align
+
+#AccessModifierOffset: 2
+
+# namespace成员的缩进
+NamespaceIndentation: All
+
+Cpp11BracedListStyle: true
